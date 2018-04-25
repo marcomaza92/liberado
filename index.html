@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Liberado</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<style media="screen">
+		.text-center {
+			text-align: center;
+		}
+		.text-left {
+			text-align: left;
+		}
+		.text-justify {
+			text-align: justify;
+		}
+		.remark {
+			color: #e7ad52;
+		}
+	</style>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>El ciclo del desarrollo web:</h2>
+					<h1>Liberado</h1>
+				</section>
+				<section>
+					<h1>Preámbulo</h1>
+				</section>
+				<section>
+					<h2>¿Quién soy?</h2>
+					<div class="text-left">
+						<p class="fragment"><strong>Lo común:</strong> Soy Marco, WebDev hace muchos años. Geek fan.</p>
+						<p class="fragment"><strong>La presentación en ingles:</strong> I'm Marco, WebDev for 4 years. I like playing futbol (such a lie)</p>
+						<p class="fragment"><strong>La verdad:</strong> Soy Marco, una persona normal, como vos que estás ahí</p>
+					</div>
+				</section>
+				<section>
+					<h2>Contacto</h2>
+					<img width="300" height="300" data-src="media/profile.jpeg" alt="Profile" class="fragment">
+					<div class="fragment text-left">
+						<p><strong>E-mail:</strong> marcoagustinmaza@gmail.com</p>
+						<p><strong>GitHub:</strong> marcomaza92</p>
+					</div>
+				</section>
+				<section>
+					<h2>Antes de empezar...</h2>
+					<div class="fragment">
+						<img width="400" height="200" data-src="https://djangogirls.org/static/img/global/logo.png" alt="DjangoGirls">
+						<img width="400" height="200" data-src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="FreeCodeCamp">
+						<img width="400" height="200" data-src="http://anairamzap.com.ar/sites/default/files/logo-linuxchixar_badge.png">
+						<img width="400" height="200" data-src="https://geochicas.org/wp-content/uploads/2018/04/banner_Geochicas_peque.jpg" alt="GoeChicas">
+					</div>
+				</section>
+				<section>
+					<h1>Temario</h1>
+				</section>
+				<section>
+					<h2 class="fragment">Parte 0</h2>
+					<ul class="fragment">
+						<li>Introducción</li>
+						<li>Objetivos</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="fragment">Parte I</h2>
+					<ul class="fragment">
+						<li>Versionado con Git</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="fragment">Parte II</h2>
+					<ul class="fragment">
+						<li>Wireframes con Pencil</li>
+						<li>Mockups con GIMP e Inkscape</li>
+						<li>Sistema de diseño con HTML y SCSS</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="fragment">Parte III</h2>
+					<ul class="fragment">
+						<li>Maquetado con HTML, SCSS y Bootstrap</li>
+						<li>DOM con JS</li>
+						<li>Robots.txt, SEO and Misc</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="fragment">Parte IV</h2>
+					<ul class="fragment">
+						<li>Lanzamiento con GitLab Pages</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="fragment">Bonus</h2>
+					<img class="fragment" width="300" height="300" data-src="https://amorphia-apparel.com/image/rex.1200.png" alt="Bonus">
+				</section>
+				<section>
+					<h1>Introducción</h1>
+				</section>
+				<section>
+					<h2>¿Qué vamos a hacer?</h2>
+					<p class="fragment">Vamos a mostrar que es posible crear un proyecto de calidad y de manera profesional, ya sea en equipo o individualmente, con herramientas netamente <span>libres y de código abierto</span></p>
+				</section>
+				<section>
+					<h2>Si, aún no me creen, lo sé...</h2>
+					<img class="fragment" width="500" height="300" data-src="http://i3.kym-cdn.com/photos/images/newsfeed/000/855/203/b60.png" alt="laugh">
+				</section>
+				<section>
+					<h1>Objetivos</h1>
+				</section>
+				<section>
+					<h2>¿Qué vamos a aprender?</h2>
+					<ul>
+						<li class="fragment">Sistema de versionado</li>
+						<li class="fragment">Experiencia e Interfaz de Usuario (UX/UI)</li>
+						<li class="fragment">Diseño web</li>
+						<li class="fragment">Desarrollo web</li>
+						<li class="fragment">Lanzamiento y almacenamiento de un sitio web</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Qué <span class="remark">NO</span> vamos a aprender?</h2>
+					<ul>
+						<li class="fragment">1 de los 923749247 Frameworks de JS</li>
+						<li class="fragment">Aplicaciones o sistemas web</li>
+						<li class="fragment">Lenguajes de back-end</li>
+						<li class="fragment">Servidores</li>
+						<li class="fragment">Ruby!</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Versionado con Git</h1>
+				</section>
+				<section>
+					<h2>¿Qué es Git?</h2>
+					<p class="fragment">Git es un sistema distribuido de control de versiones <span class="remark">libre y gratuito</span></p>
+					<p class="fragment"><em>Un sistema que está compartido en muchos lugares y sirve para organizar los miles de archivos con diferentes versiones que tenemos</em></p>
+				</section>
+				<section>
+					<h2>¿Donde uso Git?</h2>
+					<p class="fragment">En la práctica podemos usar Git para <em>casi</em> cualquier cosa</p>
+					<ul>
+						<li class="fragment">Proyectos de programación</li>
+						<li class="fragment">Proyectos de <em>no programación</em></li>
+						<li class="fragment">Libros que escribamos</li>
+						<li class="fragment">El plan del gimnasio</li>
+						<li class="fragment">La lista del super</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Clientes de Git</h2>
+					<p class="fragment">Hay muchos <em>clientes</em> para usar Git, entre ellos, GitLab, GitHub, BitBucket. Nosotros vamos a usar GitHub porque es <span class="remark">el más libre</span> (además tiene repos públicos y privados)</p>
+					<img class="fragment" width="200" height="200" data-src="https://xebialabs.com/assets/files/logos/GitLab%20CI%20logo.jpg" alt="GitLab">
+				</section>
+				<section>
+					<h2>Flujo de trabajo con Git</h2>
+					<p class="fragment">En Git tenemos un flujo de trabajo bastante sencillo de aprender:</p>
+					<ul>
+						<li class="fragment">Repositorio Local (Working copy)</li>
+						<li class="fragment">Área de Preparación (Staging area)</li>
+						<li class="fragment">Repositorio Remoto (Remote)</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Comandos en Git</h2>
+						<p class="fragment">Podemos usar Git desde nuestra PC con alguna interfaz amigable o con la terminal. Yo siempre recomiendo la terminal porque podemos <em>entender más</em> lo que estamos haciendo.</p>
+					</section>
+					<section>
+						<p>Los comandos que conforman el <em>cíclo básico</em> de Git son:</p>
+						<div class="fragment">
+							<pre><code class="hljs">git pull</code></pre>
+							<pre><code class="hljs">git status</code></pre>
+							<pre><code class="hljs">git add .</code></pre>
+							<pre><code class="hljs">git commit -av -m "Tu mensaje"</code></pre>
+							<pre><code class="hljs">git push</code></pre>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>Wireframes con Pencil</h1>
+				</section>
+				<section>
+					<h2>¿Qué es Pencil?</h2>
+					<p class="fragment">Es una herramienta de prototipado y creación de bocetos <span class="remark">libre y gratuita</span></p>
+				</section>
+				<section>
+					<h2>¿Dónde uso Pencil?</h2>
+					<p class="fragment">En este caso, lo utilizaremos para crear wireframes para poder entender y mostrar de manera clara y concisa el <span class="remark">funcionamiento del sitio web</span></p>
+				</section>
+				<section>
+					<h2>¿Wire...qué?. Wireframe</h2>
+					<p class="fragment">El wireframe es una guía visual que representa el esqueleto o estructura visual de un sitio web y como funcionan todos los componentes que la forma.</p>
+					<p class="fragment">El wireframe carece de estilo tipográfico, color o aplicaciones y/o ediciones gráficas ya que se centra en el funcionamiento o UX (Experiencia de Usuario) del sitio web.</p>
+				</section>
+				<section>
+					<h2>Flujo de trabajo en Pencil</h2>
+					<p class="fragment">En Pencil, gracias a su simplicidad, podemos resumir las tareas en las siguientes:</p>
+					<ul>
+						<li class="fragment">Diseñamos el wireframe</li>
+						<li class="fragment">Guardamos en un archivo .epz o exportamos a otros formatos</li>
+						<li class="fragment">Compartimos el archivo con los demás</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>Mockups con GIMP e Inkscape</h1>
+				</section>
+				<section>
+					<h2>¿Qué es GIMP?</h2>
+					<p class="fragment">Es una herramienta de edición de imágenes <span class="remark">libre y de código abierto</span>. Sus siglas viene de GNU Image Manipulation Program</p>
+				</section>
+				<section>
+					<h2>¿Qué es Inkscape?</h2>
+					<p class="fragment">Es una herramienta de edición profesional de gráficos vectoriales <span class="remark">libre y de código abierto</span></p>
+				</section>
+				<section>
+					<h2>¿Dónde uso estas herramientas?</h2>
+					<p class="fragment">Usualmente estas herramientas se usan para diseñar y trabajar con edición de gráficos.</p>
+					<p class="fragment">En el caso del desarrollo web, esto forma parte del <span class="remark">diseño web</span>. Con estas herramientas convertimos los wireframes en mockups</p>
+				</section>
+				<section>
+					<h2>¿Qué es un Mockup?</h2>
+					<p class="fragment">El mockup (o boceto), al igual que el wireframe, es un guía visual pero que <span class="remark">si</span> contiene estilos tipográficos, color y detalles más pulidos de la UI (Interfaz de usuario).</p>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>Sistema de diseño con HTML y SCSS</h1>
+				</section>
+				<section>
+					<h2>¿Qué es un sistema de diseño?</h2>
+					<p class="fragment">Cómo estamos viendo, todo lo anterior se enfoca en el <span class="remark">diseño web</span>. El sistema de diseño es el paso <span class="remark">de transición</span> entre el diseño web y el desarrollo web.</p>
+					<p class="fragment">El sistema de diseño es un <em>acuerdo común</em> entre diseñadores y desarrolladores para lograr una <span class="remark">igualdad</span> entre los diseños presentados y cómo se ven estos en código.</p>
+				</section>
+				<section>
+					<h2>¿Dónde uso el sistema de diseño?</h2>
+					<p class="fragment">Lo vamos a utilizar como <em>medio de comunicación</em> entre los diseñadores y los desarrolladores para evitar supuestos, asumir escenarios y tener en claro las mismas lineas de UI.</p>
+				</section>
+				<section>
+					<h2>¿Cómo hago uno?</h2>
+					<p class="fragment">No es una tarea sencilla y requiere de muchos acuerdos entre las partes y una inversión de tiempo grande para pulir al máximo todos los detalles (recuerden que es un <em>medio de comunicación</em>).</p>
+					<p class="fragment">Pero una vez hecho, el flujo de trabajo se vuelve exageradamente sencillo y fácil de implementar.</p>
+				</section>
+				<section>
+					<h2>¿Por qué usar código para un sistema de <span class="remark">diseño</span>? (I)</h2>
+					<ul>
+						<li class="fragment">Le damos los estilos al desarrollador directamente en código</li>
+						<li class="fragment">Aumentamos el conocimiento de los diseñadores respecto al código que usarán los desarrolladores</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Por qué usar código para un sistema de <span class="remark">diseño</span>? (II)</h2>
+					<ul>
+						<li class="fragment">Los diseñadores conocerán las limitaciones que puede tener el código a la hora de realizar un diseño</li>
+						<li class="fragment">Los desarrolladores trabajarán codo a codo con los diseñadores brindando otra perspectiva más técnica</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>¿Y?</h1>
+					<h2 class="fragment">¿Cómo van hasta ahora?</h2>
+					<h2 class="fragment">¿Seguimos?</h2>
+				</section>
+				<section>
+					<h1>Maquetado con HTML, SCSS y Bootstrap</h1>
+				</section>
+				<section>
+					<h2>¿Qué es el maquetado?</h2>
+					<p class="fragment">El maquetado es la codificación de la estructura o esqueleto del sitio web que se ha diseñado.</p>
+				</section>
+				<section>
+					<h2>HTML, SCSS y Bootstrap</h2>
+					<h1 class="fragment">¿KHE?</h1>
+					<p class="fragment">Bueno, vamos de a poco...</p>
+				</section>
+				<section>
+					<h2>HTML</h2>
+					<p class="fragment">HTML es <span class="remark">lenguaje de marcado</span> que se utiliza para <span class="remark">codificar la estructura</span> de un sitio web.</p>
+					<p>HTML <span class="remark">NO ES UN LENGUAJE DE PROGRAMACIÓN</span> (y ni se les ocurra parsearlo).</p>
+				</section>
+				<section>
+					<h2>CSS</h2>
+					<p>CSS es un <span class="remark">lenguaje de estilos</span> que se utiliza para <span class="remark">codificar los estilos</span> de un sitio web.</p>
+					<p>CSS <span class="remark">NO ES UN LENGUAJE DE PROGRAMACIÓN</span>(y ni se les ocurra usar estilo inline).</p>
+				</section>
+				<section>
+					<h2>Sass</h2>
+					<p class="fragment">Sass es un <span class="remark">lenguaje de script</span> que es traducido a CSS.</p>
+					<p class="fragment">Esta programado en Ruby y es <span class="remark">libre y de código abierto</span>.</p>
+				</section>
+				<section>
+					<h2>Sintaxis de Sass</h2>
+					<p class="fragment">Existen dos sintaxis de Sass:</p>
+					<ul>
+						<li class="fragment">Sintaxis Indentada: Original de Sass (Sass Syntax)</li>
+						<li class="fragment">Sintaxis de bloque: Nueva sintaxis (Scss Syntax)</li>
+					</ul>
+					<p>Nosotros vamos a usar la última por varias razones.</p>
+				</section>
+				<section>
+					<h2>Scss</h2>
+					<p>Scss significa <em>Sassy CSS</em> y vamos a usar esta sintaxis por lo siguiente:</p>
+					<ul>
+						<li class="fragment">Es la más compatible con CSS tradicional</li>
+						<li class="fragment">Es más verborragica y fácil de interpretar</li>
+						<li class="fragment">Nos permite adentrarnos a lenguajes de programación con más facilidad</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Bootstrap (I)</h2>
+					<p class="fragment">Es una librería <span class="remark"> front-end</span>utilizada en gran parte de los sitios web actualmente.</p>
+					<p class="fragment">Una librería es un conjunto de scripts, clases, snippets, componentes, etc., que pueden ser utilizados en proyectos mediante el enlazamiento de dicha librería.</p>
+				</section>
+				<section>
+					<h2>Bootstrap (II)</h2>
+					<p>De bootstrap solamente vamos a utilizar las <em>media queries</em>.</p>
+					<p>Las <span class="remark">media queries</span> son módulos (o instrucciones) de CSS que permiten <span class="remark">adaptar la representación del contenido a las características del dispositivo utilizado</span> para navegar por el sitio.</p>
+				</section>
+				<section>
+					<h2>¿Dónde uso todo esto?</h2>
+					<p class="fragment">En este caso, vamos a utilizar HTML, SCSS y las media queries de Bootstrap para <span class="remark">maquetar</span> nuestro diseño web.</p>
+					<p class="fragment"><em>Es decir, pasamos a código el diseño web de nuestro proyecto</em>.</p>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>DOM con JS</h1>
+				</section>
+				<section>
+					<h2>¿Qué es el DOM?</h2>
+					<p class="fragment">El DOM es una API (Interfaz de Programación de Aplicaciones) para documentos HTML (y XML). Proporciona una representación estructual <em>visual y del contenido</em> del documento que puede ser modificada por los lenguajes de script o de programación (por ejemplo, JavaScript).</p>
+					<p class="fragment">Una API es, básicamente, un conjunto de métodos de comunicación entre varias partes del proyecto o sistema.</p>
+				</section>
+				<section>
+					<h2>¿Qué es JavaScript?</h2>
+					<p class="fragment">Es un lenguaje de script (y también de programación) que sirvió inicialmente para la manipulación del DOM de los sitios web.</p>
+					<p>En la actualidad JS es utilizado en ambas partes del <em>stack</em> y su popularidad ha aumentado notablemente.</p>
+				</section>
+				<section>
+					<h2>¿Dónde uso JS?</h2>
+					<p class="fragment">En este caso utilizamos JS para manejar <span class="remark">dinámicamente</span> el maquetado que hicimos anteriormente mediante la maravillosa herramienta del DOM.</p>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>Miscelaneas</h1>
+				</section>
+				<section>
+					<h2>¿Qué hay acá?</h2>
+					<p class="fragment">Acá vamos a ver las cosas que, si bien son importantes, son opcionales o tienen más de una forma de hacerse dependiendo el proyecto.</p>
+				</section>
+				<section>
+					<h2>SEO</h2>
+					<p class="fragment">SEO signifca <em>Search Engine Optimization</em> y sirve para mejorar el posicionamiento (o visibilidad) de un sitio web en los resultados <span class="remark">orgánicos</span> de los diferentes búscadores.</p>
+					<p>Podemos dividir el SEO en dos grandes tipos:</p>
+					<ul>
+						<li>On-Site</li>
+						<li>Off-Site</li>
+					</ul>
+				</section>
+				<section>
+					<h2>SEO On-Site</h2>
+					<p class="fragment">El SEO On-Site es el que engloba las siguientes prácticas:</p>
+					<ul>
+						<li class="fragment">Uso de palabras claves (<em>Keywords</em>) en las etiquetas &lt;meta&gt;</li>
+						<li class="fragment">Uso del <em>mobile-first</em> como patrón de diseño</li>
+						<li class="fragment">Uso de formatos de URLs (enlaces) amigables</li>
+					</ul>
+				</section>
+				<section>
+					<h2>SEO Off-Site</h2>
+					<p class="fragment">El SEO Off-Site es el que engloba las siguientes prácticas:</p>
+					<ul>
+						<li class="fragment">Número y calidad de las URLs (enlaces)</li>
+						<li class="fragment">Presencia en redes sociales, medios de difusión, etc.</li>
+						<li class="fragment">Resultados en los motores de búsquedas</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¿Donde uso el SEO?</h2>
+					<p class="fragment">En este caso, usaremos el SEO en el mismo código HTML que hicimos más arriba.</p>
+				</section>
+				<section>
+					<h2>Humans.txt</h2>
+					<p class="fragment">Humans.txt es un <span class="remark">archivo de texto plano</span> en el cual figura la <span class="remark">información de los autores y/o colaboradores del sitio web</span>.</p>
+					<p class="fragment">Es un archivo opcional pero siempre es bueno tenerlo para mejorar la visibilidad y <em>humanidad</em>del sitio web.</p>
+				</section>
+				<section>
+					<h2>¿Dónde uso Humans.txt?</h2>
+					<p class="fragment">Simple. Se coloca en la raíz del proyecto junto con los demás archivos.</p>
+				</section>
+				<section>
+					<h2>.editorconfig</h2>
+					<p class="fragment">.editorconfig es un <span class"remark">archivo de formato</span> que ayuda a mantener <span class="remark">reglas estándares</span> a través del proyecto y sus colaboradores.</p>
+				</section>
+				<section>
+					<h2>¿Dónde uso .editorconfig?</h2>
+					<p class="fragment">Este archivo va al mismo nivel que el archivo humans.txt y, al igual que este último, no es intrusivo de ningua manera.</p>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>Lanzamiento con GitLab Pages</h1>
+				</section>
+				<section>
+					<h2>Introducción</h2>
+					<p class="fragment">Recuendan que vimos Git y dijimos que íbamos a usar GitLab porque es lo más libre que hay?. Bueno, ahora con ese mismo GitLab vamos a <em>subir</em> nuestro sitio web a internet.</p>
+				</section>
+				<section>
+					<h2>¿Qué es GitLab Pages?</h2>
+					<p class="fragment">Entonces, GitLab Pages es una herramienta que nos permite convertir nuestro repositorio en un <em>hosting</em> para <span class="remark">sitios web estáticos</span></p>
+				</section>
+				<section>
+					<h2>¿Dónde uso GitLab Pages?</h2>
+					<p class="fragment">Cuando hacemos un sitio, lo último (usualmente) que hacemos es <em>hostearlo</em> para que los demás puedan verlo en linea.</p>
+				</section>
+				<section>
+					<h2>¿Cómo lo hago?</h2>
+					<p class="fragment">Primero debemos chequear que determinadas opciones estén activadas (al 2018 ya vienen activadas por defecto)</p>
+					<p class="fragment">Luego debemos crear un archivo <em>.gitlab-ci.yml</em> y ubicarlo en la raiz de nuestro proyecto</p>
+					<p class="fragment">Por último nos dirigimos a nuestras opciones de página, buscamos el enlace, ingresamos y <em>voilà!</em>.</p>
+				</section>
+				<section>
+					<h2>Paso 1 - Configuraciones</h2>
+					<p class="fragment">En el menú de la izquierda vamos a ir a <em>Setting -> CI / CD -> Runners Settings -> Expand</em></p>
+					<p class="fragment">Buscamos <em>Shared Runners</em> (a la derecha) y nos fijamos si está activado (debería estarlo).</p>
+				</section>
+				<section>
+					<h2>Paso 1 - Configuraciones</h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="GitLab">
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<p class="fragment">En el menu de la izquierda vamos a Overview y cuando se cargue la pantalla buscamos (a la derecha) un butón que dice Setup CI/CD</p>
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="GitLab">
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<p class="fragment">A la izquierda de la pantalla vamos un menu desplegable que dice <em>From template</em>, hacemos click y escribimos "HTML" y nos va a generar el contenido automágicamente.</p>
+					<p class="fragment">Bajamos un poco y hacemos click en el botón verde para guardar los cambios.</p>
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="GitLab">
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<p class="fragment">En el menú de la izquierda vamos a CI/CD -> Pipelines y cuando se cargue la pantalla buscamos un recuadro. Puede ser azul y decir <em>Executing</em> o verde y decir <em>Passed</em>.</p>
+					<p class="fragment">Al margen de lo que diga, hacemos click ahí y vamos a ver el estado de nuestro <em>proceso</em> que lanza el sitio web.</p>
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="GitLab">
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<p class="fragment">Vamos refrescando el sitio y cuando el proceso este como <em>passed</em> procedemos al siguiente paso</p>
+				</section>
+				<section>
+					<h2>Paso 2 - Creamos el <em>.gitlab-ci.yml</em></h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="GitLab">
+				</section>
+				<section>
+					<h2>Paso 3 - Buscamos el enlace</h2>
+					<p class="fragment">En el menú de la izquierda vamos a Settings -> Pages y buscamos un lugar que diga <em>Access Pages</em>.</p>
+					<p class="fragment">Ahí se encontrará nuestro link. Si clickeamos, nos debería llevar a nuestro sitio web que desarrollamos localmente.</p>
+				</section>
+				<section>
+					<h2>Paso 3 - Buscamos el enlace</h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="GitLab">
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>¡Bonus!</h1>
+					<h2 class="fragment">WebAssembly</h2>
+				</section>
+				<section>
+					<h2>¿Qué es WebAssembly?</h2>
+					<p class="fragment">Básicamente, WebAssembly es un <em>comunicador</em> entre lenguajes como C/C++ y la web.</p>
+					<p class="fragment">Es decir, podemos correr código C/C++ en un sitio web o aplicación web</p>
+				</section>
+				<section>
+					<h2>Y eso está increíble!</h2>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="WebAssembly">
+				</section>
+				<section>
+					<h2>Alcances y Estado del arte</h2>
+					<p class="fragment">Hoy por hoy, WASM está en una etapa de maduración y <em>prueba y error</em> constante. Mejorando día a día.</p>
+					<p class="fragment">En lo personal, una aplicación <em>directa</em> sería la <em>traducción</em> de ese código viejo (C/C++) a un ambiente web.</p>
+				</section>
+				<section>
+					<h2>Demostración</h2>
+				</section>
+				<section>
+					<h1>¿Preguntas?</h1>
+				</section>
+				<section>
+					<h1>Agradecimientos</h1>
+				</section>
+				<section>
+					<div class="fragment">
+						<img width="400" height="200" data-src="https://djangogirls.org/static/img/global/logo.png" alt="DjangoGirls">
+						<img width="400" height="200" data-src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="FreeCodeCamp">
+						<img width="400" height="200" data-src="http://anairamzap.com.ar/sites/default/files/logo-linuxchixar_badge.png">
+						<img width="400" height="200" data-src="https://geochicas.org/wp-content/uploads/2018/04/banner_Geochicas_peque.jpg" alt="GoeChicas">
+					</div>
+				</section>
+				<section>
+					<h3>Gracias!</h3>
+					<img class="fragment" width="800" height="600" data-src="media/gitlabpages01.png" alt="WebAssembly">
+				</section>
+				<section>
+					<h2>Contacto</h2>
+					<img width="300" height="300" data-src="media/profile.jpeg" alt="Profile" class="fragment">
+					<div class="fragment text-left">
+						<p><strong>E-mail:</strong> marcoagustinmaza@gmail.com</p>
+						<p><strong>GitHub:</strong> marcomaza92</p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
