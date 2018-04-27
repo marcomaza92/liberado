@@ -1,0 +1,46 @@
+{
+  "name": "liberado",
+  "version": "1.0.0",
+  "description": "El Ciclo del Desarrollo Web: Liberado",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "*",
+    "gulp-js-minify": "*",
+    "gulp-sass": "*",
+    "gulp-svgmin": "*",
+    "gulp-svgstore": "*",
+    "gulp-watch": "*",
+    "node-sass": "*",
+    "path": "*"
+  },
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/marcomaza92/liberado.git"
+  },
+  "keywords": [
+    "Diseño Web",
+    "Desarrollo Web",
+    "UX/UI",
+    "Sistema de Diseño",
+    "Software Libre",
+    "Open Source",
+    "Web Design",
+    "Web Development",
+    "Design System"
+  ],
+  "author": "Marco Maza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/marcomaza92/liberado/issues"
+  },
+  "homepage": "https://gitlab.com/marcomaza92/liberado#README"
+}

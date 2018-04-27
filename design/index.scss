@@ -112,9 +112,25 @@ $font-sizes-length: length($font-sizes);
 body {
   // Reset
 
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 2.5rem 5rem;
+
+  pre {
+    background: map-deep-get($shades, white-shades, white-shade-2);
+    margin: 0;
+    padding: 1rem 0;
+    .sample-class {
+      color: map-get($colors, purple);
+    }
+    .sample-pseudo-class {
+      color: map-get($colors, yellow);
+    }
+    .property {
+      color: map-get($colors, turquoise);
+    }
+    .value {
+      color: map-get($colors, green);
+    }
+  }
 
   // Typography
 
@@ -123,24 +139,6 @@ body {
     font-family: 'Lato', sans-serif;
   }
   // Sizes
-  a {
-    text-decoration: none;
-    cursor: pointer;
-  }
-  button {
-    width: 96px;
-    height: 48px;
-    border: 0;
-    cursor: pointer;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
   h1 {
     font-size: map-get($fonts, font-h1);
   }
@@ -151,8 +149,7 @@ body {
     font-size: map-get($fonts, font-h3);
   }
   h4,
-  p,
-  a {
+  p {
     font-size: map-get($fonts, font-base);
   }
   h5 {
@@ -172,6 +169,30 @@ body {
     font-weight: bold;
   }
   .colors {
+    width: 100%;
+    span {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      line-height: 100px;
+      width: 100px;
+      height: 100px;
+    }
+    .black,
+    .purple,
+    .green {
+      color: map-get($colors, white);
+      h3,
+      p {
+        color: map-get($colors, black);
+      }
+    }
+    .white,
+    .yellow,
+    .turquoise {
+      color: map-get($colors, black);
+    }
     @each $color-name, $color-value in $colors {
       .#{$color-name} {
         @for $i from 1 through 11 {
@@ -195,78 +216,124 @@ body {
     }
   }
   .buttons {
-    &.primary {
-      background: map-get($colors, black);
-      color: map-get($colors, white);
-      transition: 0.25s all ease-in-out;
-      &:hover,
-      &:focus {
+    button {
+      width: 96px;
+      height: 48px;
+      border: 0;
+      cursor: pointer;
+    }
+    .primary {
+      .normal {
+        background: map-get($colors, black);
+        color: map-get($colors, white);
+      }
+      .hover,
+      .focus {
         background: map-deep-get($tints, black-tints, black-tint-5);
         color: map-get($colors, white);
       }
+      .disable {
+        background: map-deep-get($shades, white-shades, white-shade-5);
+        color: map-deep-get($shades, white-shades, white-shade-2);
+      }
+      .live {
+        background: map-get($colors, black);
+        color: map-get($colors, white);
+        transition: 0.25s all ease-in-out;
+        &:hover,
+        &:focus {
+          background: map-deep-get($tints, black-tints, black-tint-5);
+          color: map-get($colors, white);
+        }
+      }
     }
-    &.secondary {
-      background: map-get($colors, white);
-      color: map-get($colors, black);
-      transition: 0.25s all ease-in-out;
-      &:hover,
-      &:focus {
+    .secondary {
+      .normal {
+        background: map-get($colors, white);
+        color: map-get($colors, black);
+      }
+      .hover,
+      .focus {
         background: map-deep-get($shades, white-shades, white-shade-5);
         color: map-get($colors, black);
+      }
+      .disable {
+        background: map-deep-get($shades, white-shades, white-shade-5);
+        color: map-deep-get($shades, white-shades, white-shade-2);
+      }
+      .live {
+        background: map-get($colors, white);
+        color: map-get($colors, black);
+        transition: 0.25s all ease-in-out;
+        &:hover,
+        &:focus {
+          background: map-deep-get($shades, white-shades, white-shade-5);
+          color: map-get($colors, black);
+        }
       }
     }
   }
   .links {
-    &.primary {
-      color: map-get($colors, black);
-      transition: 0.25s all ease-in-out;
-      &:hover,
-      &:focus {
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .primary {
+      .normal {
+        color: map-get($colors, black);
+      }
+      .hover,
+      .focus {
         color: map-deep-get($tints, black-tints, black-tint-5);
       }
-      &:visited {
+      .visited {
         color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
       }
+      .disable {
+        color: map-deep-get($shades, white-shades, white-shade-5);
+        pointer-events: none;
+      }
+      .live {
+        color: map-get($colors, black);
+        transition: 0.25s all ease-in-out;
+        &:hover,
+        &:focus {
+          color: map-deep-get($tints, black-tints, black-tint-5);
+        }
+        &:visited {
+          color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
+        }
+      }
     }
-    &.secondary {
-      color: map-get($colors, white);
-      transition: 0.25s all ease-in-out;
-      &:hover,
-      &:focus {
+    .secondary {
+      a {
+        background: map-get($colors, black);
+      }
+      .normal {
+        color: map-get($colors, white);
+      }
+      .hover,
+      .focus {
         color: map-deep-get($shades, white-shades, white-shade-5);
       }
-      &:visited {
+      .visited {
         color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
       }
-    }
-  }
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  header {
-    padding: 2rem 0;
-    background: map-get($colors, black);
-    * {
-      color: map-get($colors, white);
-    }
-    h1 {
-      float: left;
-      width: calc(70% - 20px);
-      margin-left: 20px;
-    }
-    #menu-open {
-      display: inline-block;
-      width: calc(30% - 20px);
-      margin-right: 20px;
-      text-align: right;
-      font-size: map-get($fonts, font-h1);
-    }
-    nav {
-      clear: both;
-    }
-    nav.close {
-      display: none;
+      .disable {
+        color: map-deep-get($tints, black-tints, black-tint-2);
+        pointer-events: none;
+      }
+      .live {
+        color: map-get($colors, white);
+        transition: 0.25s all ease-in-out;
+        &:hover,
+        &:focus {
+          color: map-deep-get($shades, white-shades, white-shade-5);
+        }
+        &:visited {
+          color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
+        }
+      }
     }
   }
 }
