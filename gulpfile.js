@@ -15,7 +15,7 @@ gulp.task('serve', function() {
     browserSync.init({
       // proxy: 'http://mmaza.darwoft.com/projects/ect'
       server: './',
-      browser: ['firefox', 'chrome']
+      browser: ['firefox', 'chromium']
     });
 
     gulp.watch('code/*.scss', ['code']);
