@@ -1,0 +1,22 @@
+/* TEAM */
+	Chef: Marco Maza
+	Contact: marcoagustinmaza [at] gmail.com
+	Twitter: @marcoagusmaza
+	From: Córdoba, Argentina
+
+/* THANKS */
+	(First) EN Translator: Marco Maza
+	Twitter: @marcoagusmaza
+	From: Córdoba, Argentina
+
+	NL Translator: Tina Samson
+	Twitter: @tbs_92
+	Location: Goes, The Netherlands
+
+	Media Queries by: Bootstrap 4 and Marco Maza
+
+/* SITE */
+	Last update :2018/04/28
+	Language: Castellano / English / Netherlands
+	Doctype: HTML5
+	IDE: Pencil, Inkscape, GIMP, Atom, Firefox
