@@ -302,6 +302,10 @@ body {
         }
         &:visited {
           color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
+          transition: 0.25s all ease-in-out;
+          &:hover {
+            color: map-deep-get($tints, turquoise-tints, turquoise-tint-5);
+          }
         }
       }
     }
@@ -319,6 +323,9 @@ body {
       .visited {
         color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
       }
+      .hover-visited {
+        color: map-deep-get($tints, turquoise-tints, turquoise-tint-5);
+      }
       .disable {
         color: map-deep-get($tints, black-tints, black-tint-2);
         pointer-events: none;
@@ -332,6 +339,10 @@ body {
         }
         &:visited {
           color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
+          transition: 0.25s all ease-in-out;
+          &:hover {
+            color: map-deep-get($tints, turquoise-tints, turquoise-tint-5);
+          }
         }
       }
     }

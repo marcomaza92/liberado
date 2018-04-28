@@ -10,37 +10,40 @@
 <body>
   <header>
     <h1>Marco Maza</h1>
-    <a href="#" id="menu-open" class="links secondary">#</a>
+    <a href="#" id="menu-open" class="links secondary">&</a>
     <nav id="nav" class="close">
-      <ul style="background: black;">
+      <a href="#" id="menu-close" class="links secondary">X</a>
+      <ul>
         <li><a href="#about" id="about-desktop" class="links secondary">¿Quién soy?</a></li>
-        <li><a href="#projects" id="projects-desktop" class="links secondary">Proyectos</a></li>
+        <li><a href="#work" id="work-desktop" class="links secondary">Proyectos</a></li>
         <li><a href="#knowledge" id="knowledge-desktop" class="links secondary">Conocimientos</a></li>
         <li><a href="#contact" id="contact-desktop" class="links secondary">Contacto</a></li>
         <li><button type="button" name="button" class="buttons secondary">Descargar CV</button></li>
-        <li><a href="#" id="menu-close" class="links secondary">X</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section id="about">
+    <span id="about" class="menu"></span>
+    <section class="about">
       <h1>¿Quién soy?</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
-    <section id="work">
+    <span id="work" class="menu"></span>
+    <section class="work">
       <h1>Proyectos</h1>
       <div class="">
-        <img src="media/proyecto01.png" alt="Project01">
+        <a href="#" class="links primary"><img src="media/proyecto01.png" alt="Project01"></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <a href="#">| Ver Mas |</a>
+        <a href="#" class="links primary">| Ver Mas |</a>
       </div>
       <div class="">
-        <img src="media/proyecto02.png" alt="Project02">
+        <a href="#" class="links primary"><img src="media/proyecto02.png" alt="Project02"></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <a href="">| Ver Mas |</a>
+        <a href="#" class="links primary">| Ver Mas |</a>
       </div>
     </section>
-    <section id="knowledge">
+    <span id="knowledge" class="menu"></span>
+    <section class="knowledge">
       <h1>Conocimientos</h1>
       <span>HTML</span>
       <span>CSS</span>
@@ -53,16 +56,17 @@
       <span>Web Design</span>
       <span>WebAssembly</span>
     </section>
-    <section id="contact">
+    <span id="contact" class="menu"></span>
+    <section class="contact">
       <h1>Contacto</h1>
-      <p><span></span>: <span></span></p>
-      <p><span></span>: <span></span></p>
-      <p><span></span>: <span></span></p>
-      <button type="button" name="cv">Descargar CV</button>
+      <p><span class="bold">E-mail</span>: marcoagustinmaza@gmail.com<span></span></p>
+      <p><span class="bold">LinkedIn</span>: marcomaza92<span></span></p>
+      <p><span class="bold">GitLab</span>: marcomaza92<span></span></p>
+      <button type="button" name="cv" class="buttons primary">Descargar CV</button>
     </section>
   </main>
   <footer>
-    <p><em>Per aspera ad astra</em></p>
+    <p class="italic bold">Per aspera ad astra</p>
   </footer>
   <script src="index.js" charset="utf-8"></script>
 </body>
