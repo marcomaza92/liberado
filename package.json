@@ -9,7 +9,7 @@
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
-    "gulp-cli": "^2.0.1",
+    "gulp-cli": "*",
     "gulp-concat": "*",
     "gulp-js-minify": "*",
     "gulp-sass": "*",

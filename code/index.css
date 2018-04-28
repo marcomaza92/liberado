@@ -203,7 +203,7 @@ body {
     body .links.secondary:hover, body .links.secondary:focus {
       color: #bfbfbf; }
     body .links.secondary:visited {
-      color: #137676; }
+      color: #19a2a2; }
   body img {
     width: 100%;
     height: 100%; }
@@ -226,3 +226,21 @@ body {
       clear: both; }
     body header nav.close {
       display: none; }
+  body #about {
+    margin: 40px 0 20px 0; }
+    body #about * {
+      margin-left: 20px;
+      margin-right: 20px; }
+  body #work {
+    background: #e6e6e6;
+    padding: 40px 0;
+    margin: 20px 0 20px 0; }
+    body #work > * {
+      margin-left: 20px;
+      margin-right: 20px; }
+      body #work > * img {
+        margin: 20px 0; }
+      body #work > * a {
+        display: block;
+        width: 100%;
+        text-align: right; }

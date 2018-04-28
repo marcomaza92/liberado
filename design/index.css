@@ -40,18 +40,18 @@ body {
       margin: 0;
       padding: 0;
       text-align: center;
-      line-height: 100px;
+      line-height: 50px;
       width: 100px;
       height: 100px; }
     body .colors .black,
     body .colors .purple,
     body .colors .green {
       color: #FFFFFF; }
-      body .colors .black h3,
+      body .colors .black h4,
       body .colors .black p,
-      body .colors .purple h3,
+      body .colors .purple h4,
       body .colors .purple p,
-      body .colors .green h3,
+      body .colors .green h4,
       body .colors .green p {
         color: #000000; }
     body .colors .white,

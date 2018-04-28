@@ -154,18 +154,7 @@
        preserveAspectRatio="none"
        height="661.7229"
        width="176.47708" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3764"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,15.326938,-185.80788)"><flowRegion
-         id="flowRegion3766"><rect
-           id="rect3768"
-           width="116.07143"
-           height="42.5"
-           x="177.5"
-           y="206.71428" /></flowRegion><flowPara
-         id="flowPara3770" /></flowRoot>  </g>
+</g>
   <g
      inkscape:groupmode="layer"
      id="layer7"
@@ -193,7 +182,7 @@
        style="display:inline;stroke-width:0.27009028" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:Lato;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="44.096294"
        y="61.796421"
        id="text3776"><tspan
@@ -222,18 +211,11 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot4664"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(0.26458333)"><flowRegion
-         id="flowRegion4666"><rect
-           id="rect4668"
-           width="137.38075"
-           height="46.972092"
-           x="207.58635"
-           y="289.77606" /></flowRegion><flowPara
-         id="flowPara4670">¿Quién Soy?</flowPara><flowPara
-         id="flowPara4672" /></flowRoot>    <text
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Lato;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowPara
+         id="flowPara4670">¿Quién Soy?</flowPara></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:Lato;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        x="44.979168"
        y="96.715134"
        id="text4696"><tspan

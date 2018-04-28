@@ -236,7 +236,7 @@ body {
         color: map-deep-get($shades, white-shades, white-shade-5);
       }
       &:visited {
-        color: map-deep-get($shades, turquoise-shades, turquoise-shade-1);
+        color: map-deep-get($tints, turquoise-tints, turquoise-tint-1);
       }
     }
   }
@@ -267,6 +267,30 @@ body {
     }
     nav.close {
       display: none;
+    }
+  }
+  #about {
+    margin: 40px 0 20px 0;
+    * {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  #work {
+    background: map-deep-get($shades, white-shades, white-shade-2);
+    padding: 40px 0;
+    margin: 20px 0 20px 0;
+    & > * {
+      img {
+        margin: 20px 0;
+      }
+      a {
+        display: block;
+        width: 100%;
+        text-align: right;
+      }
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 }

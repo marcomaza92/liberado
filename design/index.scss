@@ -175,7 +175,7 @@ body {
       margin: 0;
       padding: 0;
       text-align: center;
-      line-height: 100px;
+      line-height: 50px;
       width: 100px;
       height: 100px;
     }
@@ -183,7 +183,7 @@ body {
     .purple,
     .green {
       color: map-get($colors, white);
-      h3,
+      h4,
       p {
         color: map-get($colors, black);
       }
